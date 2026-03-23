@@ -1,0 +1,53 @@
+/* ------------------------------------------------------------------
+   1. YOUTUBE SHORTS — Shelf / seção em qualquer página
+   ------------------------------------------------------------------ */
+
+/* Shelf de Shorts na homepage e na busca */
+ytd-reel-shelf-renderer {
+  display: none !important;
+}
+
+/* Rich-section da homepage marcada como Shorts */
+ytd-rich-section-renderer[is-shorts] {
+  display: none !important;
+}
+
+/* Componente de player de Shorts */
+ytd-shorts {
+  display: none !important;
+}
+
+/* Itens de vídeo individuais marcados como SHORTS na busca */
+ytd-video-renderer[overlay-style="SHORTS"],
+ytd-compact-video-renderer[overlay-style="SHORTS"] {
+  display: none !important;
+}
+
+/* Reel items individuais (Shorts em qualquer contexto) */
+ytd-reel-item-renderer {
+  display: none !important;
+}
+
+/* Novos componentes de Shorts (2025+) — custom elements exclusivos de Shorts */
+ytm-shorts-lockup-view-model-v2,
+ytm-shorts-lockup-view-model {
+  display: none !important;
+}
+
+/* ------------------------------------------------------------------
+   2. SHORTS — Aba em páginas de canal
+   ------------------------------------------------------------------ */
+yt-tab-shape[tab-title="Shorts"] {
+  display: none !important;
+}
+
+/* ------------------------------------------------------------------
+   3. MENU LATERAL — link de Shorts (guide e mini-guide)
+   Os seletores :has() abaixo operam apenas sobre os ~10 itens fixos
+   do menu lateral (não sobre listas dinâmicas), custo negligenciável.
+   ------------------------------------------------------------------ */
+ytd-guide-entry-renderer:has(a[href^="/shorts"]),
+ytd-mini-guide-entry-renderer:has(a[href^="/shorts"]) {
+  display: none !important;
+}
+

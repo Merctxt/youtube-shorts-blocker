@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Cleaner</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 260px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 13px;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      padding: 16px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    header h1 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.4;
+    }
+
+    .check {
+      color: #ff0000;
+      font-size: 14px;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+
+    footer {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px solid #282828;
+      font-size: 11px;
+      color: #717171;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>YouTube Cleaner</h1>
+  </header>
+
+  <ul>
+    <li><span class="check">✓</span> <span>Shorts removidos da homepage, busca e menu lateral</span></li>
+    <li><span class="check">✓</span> <span>Aba Shorts removida de páginas de canal</span></li>
+    <li><span class="check">✓</span> <span>Seção <em>Explorar</em> removida do menu lateral</span></li>
+    <li><span class="check">✓</span> <span>Seção <em>Mais do YouTube</em> removida do menu lateral</span></li>
+  </ul>
+
+  <footer>Ativo em todas as páginas do YouTube</footer>
+</body>
+</html>
